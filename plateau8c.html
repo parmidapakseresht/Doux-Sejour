@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <script src="math.js" type="text/javascript"></script>
+	 <link rel="stylesheet" type="text/css" href="plateau8c.css" />
+</head>
+<body> 
+
+<div class="gridgen">
+    <div class="titre"> Memory
+	</div>
+	
+	
+    <div class="menu">
+	
+		<div class="level"> Level </div>
+		
+		<div class="radio-input">
+			<label class="label"> 
+				<input type="radio" name="radio" checked="" value="1">
+				<span class="check">1</span>
+			</label>
+			<label class="label">
+				<input type="radio" name="radio" value="2">
+				<span class="check">2</span>
+			</label>   
+			<label class="label">
+				<input type="radio" name="radio" value="3">
+				<span class="check">3</span>
+			</label>
+		</div>
+		<div class="button">
+			<button class="restart" onclick="demarre()"> Play </button>
+		</div>
+	</div>
+    
+	<div class="main">
+		<div class="board" id="board">
+			<div class="grid" id="myGrid">
+			</div>
+		</div>
+	</div>
+	
+    <div class="footer" id="fin">
+		<div class="fin1" id="fin1"></div>
+		<div class="fin2" id="fin2"> : </div>
+		<div class="fin3" id="fin3"></div>
+		<div class="fin4" id="fin4"></div>
+	
+	</div>
+</div>
+	<script src="tirages8c.js" async></script>
+	<script src="graphiques8c.js" async></script>
+	<script src="grille8c.js" async></script>
+	<script src="plateau8c.js" async></script>
+	
+</body>
+</html>

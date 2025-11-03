@@ -1,0 +1,174 @@
+	:root {
+	--nbcolonne: 4;
+	}
+	
+	.body{
+		
+		
+	}
+	
+	.board {
+		width: 100%;
+		display: grid;
+		justify-items: center;
+		align-items: center; 
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(var(--nbcolonne), 1fr);
+      grid-gap: 5px;
+
+
+    }
+    .grid-item {
+      background-color:#E6E6FA;
+      padding: 10px;
+      text-align: center;
+	  border-radius: 20px;
+    }
+	.gridgen {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 1fr auto 50px;
+	row-gap: 5px;
+	font-family: comic sans ms, cursive;
+	/*align-items: center;*/
+	}
+	
+	.titre  { 
+	
+	grid-column: 1; 
+	grid-row: 1; 
+	background-color: #3399FF;
+	border-radius: 10px;
+	font-size: 28px;
+	text-align: center;
+	/*align-self: center;*/
+	height: 100px;
+	line-height: 100px;
+	
+	}
+	
+	.menu   { 
+	font-family: comic sans ms, cursive;
+	grid-column: 1; 
+	grid-row: 2 / span 2;
+	background-color:#2E8B57;
+	border-radius: 10px;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	}
+	
+	.level{
+	font-size: 20px;	
+	}
+	
+	
+	
+	.main   { 
+	grid-column: 2; 
+	grid-row: 1 / span 2; 
+	}
+	.footer { 
+	grid-column: 1 / span 2; 
+	grid-row: 4; 
+	background-color:#FF9900; /*#FFCC00*/
+	border-radius: 10px;
+	font-size: 28px;
+	text-align: center;	
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	}
+	.fin1{
+		flex-basis:50px;
+		justify-content:right;
+	}
+	.fin2{
+		flex-basis:20px;
+		justify-content:center;
+	}
+	.fin3{
+		flex-basis:50px;
+		justify-content:left;
+	}
+	.fin4{
+		flex-basis:250px;
+		justify-content:right;
+	}
+	.restart1{
+	background-color:#00BFFF;
+	border-radius: 8px;
+	font-size: 16px;
+	text-align: center;	
+	width: 100px;
+	height : 50px
+	}
+	
+	.radio-input .label input {
+	display: none;
+	}
+
+.radio-input {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.radio-input .label {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.radio-input .label .check {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 3px solid transparent;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5),
+   -1px -1px 4px rgba(255, 255, 255, 0.5);
+}
+
+.radio-input .label input:checked + .check {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5),
+   -1px -1px 4px rgba(255, 255, 255, 0.5),
+   inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+   inset -1px -1px 4px rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+
+
+button {
+  width: 100px;
+  height: 40px;
+  line-height: 10px;
+  padding: 0.7em 1.7em;
+  font-family: comic sans ms, cursive;
+  font-size: 20px;
+  border-radius: 8px;
+  background: #2E8B57;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5),
+   -1px -1px 4px rgba(255, 255, 255, 0.5);
+}
+
+button:active {
+
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5),
+   -1px -1px 4px rgba(255, 255, 255, 0.5),
+   inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+   inset -1px -1px 4px rgba(255, 255, 255, 0.5);
+   transform: scale(1.1);
+}
