@@ -3,6 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Amur Hotel - Accueil</title>
+  <style>
+    .modal-backdrop{
+      position:fixed; inset:0; background:rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; z-index:1000;
+    }
+    .modal {
+      background:#fff; padding:20px; border-radius:6px; width:320px; max-width:90%;
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    }
+    .modal header{font-weight:600; margin-bottom:10px;}
+    .modal form label{display:block; margin:8px 0 4px;}
+    .modal form input, .modal form select{width:100%; padding:6px; box-sizing:border-box;}
+    .modal .actions{display:flex; gap:8px; justify-content:flex-end; margin-top:12px;}
+    .hidden{display:none;}
+  </style>
 </head>
 <body>
 
@@ -56,11 +70,15 @@
   <section id="services">
     <h2>Nos services</h2>
     <ul>
-      <li><button type="button">Petit-déjeuner</button></li>
-      <li><button type="button">Service de nettoyage</button></li>
-      <li><button type="button">Réservation transport</button></li>
+      <li><button type="button" id="btn-breakfast">Petit-déjeuner</button></li>
+      <li><button type="button" id="btn-cleaning">Service de nettoyage</button></li>
+      <li><button type="button" id="btn-transport">Réservation transport</button></li>
     </ul>
   </section>
+
+   <div id="modal-root" class="hidden" aria-hidden="true"></div>
+
+    <script src="js/services.js"></script>
 
 </body>
 </html>
