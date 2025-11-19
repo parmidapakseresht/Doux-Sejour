@@ -37,12 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (valid !== false) close();
     });
 
-    // close on ESC
     const escHandler = (e) => { if (e.key === 'Escape') close(); };
     document.addEventListener('keydown', escHandler, { once: true });
   };
 
-  // Breakfast
+  // Petit-déjeuner
   document.getElementById('btn-breakfast').addEventListener('click', () => {
     const html = `
       <form id="breakfast-form">
@@ -70,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Cleaning
+  // Nettoyage
   document.getElementById('btn-cleaning').addEventListener('click', () => {
     const html = `
       <form id="cleaning-form">
